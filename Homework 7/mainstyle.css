@@ -1,0 +1,24 @@
+span{
+    color: white;
+    background-color: blueviolet;
+}
+
+.yellowColor {
+    color: yellow;
+    font-family: arial;
+    font-size: 24px;
+  }
+
+#specificLink{
+    color: rgb(255, 0, 0);
+    font-family: arial;
+    font-size: 28px;
+}
+
+body.lightning{
+    background-image: url(https://t4.ftcdn.net/jpg/04/15/75/37/360_F_415753793_Amq32dxFXnCvub1rJ3UbCYjyzV7CdAce.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
