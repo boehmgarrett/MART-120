@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Page 3</title>
+          <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+<script>
+    function input(){
+        var firstName = document.getElementById("fName").value;
+        if(firstName == "")
+    {
+        document.getElementById("fName").style.backgroundColor = "red";
+        document.getElementById("fName").focus();
+        document.getElementById("fNameMessage").innerHTML = "* Required";
+        document.getElementById("fNameMessage").style.color = "red"; 
+    }
+    var lastName = document.getElementById("lName").value;
+    if(lastName == "")
+    {
+        document.getElementById("lName").style.backgroundColor = "red";
+        document.getElementById("lName").focus();
+        document.getElementById("lNameMessage").innerHTML = "* Required";
+        document.getElementById("lNameMessage").style.color = "red";
+    }
+
+    var email = document.getElementById("Email").value;
+    if(email == "")
+    {
+        document.getElementById("Email").style.backgroundColor = "red";
+        document.getElementById("Email").focus();
+        document.getElementById("EmailMessage").innerHTML = "* Required";
+        document.getElementById("EmailMessage").style.color = "red";
+    }
+
+    if (document.getElementById('no').checked)
+    {
+        window.alert("Must Accept Terms.")
+    }
+    }
+</script>
+    </head>
+    <body>
+        <h1>Contact Us</h1>
+        <br />
+        <form action="Page 3.html" type="Post">
+            <p>First Name: <input type="text" id="fName">&nbsp;<span id="fNameMessage"></span></p>
+            <p>Last Name: <input type="text" id="lName">&nbsp;<span id="lNameMessage"></span></p>
+            <p>Email Address: <input type="text" id="Email">&nbsp;<span id="EmailMessage"></span></p>
+            <h3>Accept Terms of Agreement?
+        </h3>
+            <input type="radio" name="option" value="yes">Yes<br>
+            <input type="radio" name="option" value="no" id="no">&nbsp;<span id="AgreementMessage"></span>No<br>
+
+            <button id="mySubmit"
+        type="button" class="btn btn-submit" onclick="input();">Submit</button>
+
+        <a href="Homework 8.html">Go to Home Page</a>
+        <a href="Page 2.html">Go to Second Page</a>
+    </body>
+
+</html>
